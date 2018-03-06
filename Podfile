@@ -4,4 +4,5 @@
 target 'CSGitSample' do
     use_frameworks!
     pod 'SVProgressHUD’,’~> 2.1'
+    pod ‘JSONModel’
 end
