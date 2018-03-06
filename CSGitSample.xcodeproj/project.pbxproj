@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		028E095709733E95363825C5 /* Pods_CSGitSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944CD35F03B88D8E0F611D1F /* Pods_CSGitSample.framework */; };
+		83C05CD7204E499100C9554B /* HisModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C05CD6204E499100C9554B /* HisModel.m */; };
 		871FCD271F1C8B8700914082 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 871FCD261F1C8B8700914082 /* main.m */; };
 		871FCD2A1F1C8B8700914082 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 871FCD291F1C8B8700914082 /* AppDelegate.m */; };
 		871FCD2D1F1C8B8700914082 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 871FCD2C1F1C8B8700914082 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		60B2F9A5AAADDF34989A7818 /* Pods-CSGitSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSGitSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSGitSample/Pods-CSGitSample.release.xcconfig"; sourceTree = "<group>"; };
+		83C05CD5204E499100C9554B /* HisModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HisModel.h; sourceTree = "<group>"; };
+		83C05CD6204E499100C9554B /* HisModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HisModel.m; sourceTree = "<group>"; };
 		871FCD221F1C8B8700914082 /* CSGitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSGitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		871FCD261F1C8B8700914082 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		871FCD281F1C8B8700914082 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 				871FCD331F1C8B8800914082 /* LaunchScreen.storyboard */,
 				871FCD361F1C8B8800914082 /* Info.plist */,
 				871FCD251F1C8B8700914082 /* Supporting Files */,
+				83C05CD5204E499100C9554B /* HisModel.h */,
+				83C05CD6204E499100C9554B /* HisModel.m */,
 			);
 			path = CSGitSample;
 			sourceTree = "<group>";
@@ -181,10 +186,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CSGitSample/Pods-CSGitSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +241,7 @@
 			files = (
 				871FCD2D1F1C8B8700914082 /* ViewController.m in Sources */,
 				871FCD2A1F1C8B8700914082 /* AppDelegate.m in Sources */,
+				83C05CD7204E499100C9554B /* HisModel.m in Sources */,
 				871FCD271F1C8B8700914082 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +405,7 @@
 				871FCD3B1F1C8B8800914082 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
