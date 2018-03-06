@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "MyModel.h"
+#import <JSONModel/JSONModel.h>
 
 @interface ViewController ()
 
